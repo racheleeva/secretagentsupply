@@ -75,15 +75,12 @@ nav ul {
   align-items: center;
 }
 
-.product-image {
+.product-image img {
   background-color: white;
   height: 9rem;
-  padding: 2rem 0;
-/*
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  */
+  max-width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .product span {
