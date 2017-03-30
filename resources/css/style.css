@@ -89,8 +89,8 @@ nav {
   justify-content: center;
   align-items: center;
   height: 9rem;
-  padding: 2rem 0;
-  border: 4px solid black;
+  padding: 2rem 4rem;
+  background-color: white;
 }
 
 .product-image img {
@@ -126,21 +126,20 @@ nav {
   align-items: center;
 }
 
-.location .product {
+.info {
   width: 35%;
   margin-top: 3rem;
+}
+
+.info .title {
   background-color: black;
-  display: flex;
-  flex-direction: column;
+  color: white;
+  padding: 1rem 2rem;
 }
 
-.location p {
-  color: black;
+.info .details {
   background-color: white;
-}
-
-.location span {
-  padding-top: 1rem 2rem;
+  color: black;
 }
 
 footer {
@@ -148,8 +147,8 @@ footer {
   background-color: black;
   height: 5rem;
   padding: 5rem 0;
-  /*display: flex;
-  align-items: center;*/
+  /*display: flex;*/
+  /*align-items: center;*/
 }
 
 @media only screen and (max-width: 1024px) {
@@ -168,7 +167,11 @@ footer {
     width: 47%;
   }
 
-  .location .product {
+  .glasses.product {
+    display: none;
+  }
+
+  .info {
     width: 35%;
   }
 }
@@ -194,18 +197,22 @@ footer {
     font-size: 1rem;
   }
 
-  .product-grid .product {
+ .product-grid .product {
     width: 90%;
   }
 
-  .location .product {
+  .watch.product {
+    display: none;
+  }
+
+  .info {
     width: 90%;
-    margin-bottom: 0.5rem;
-    flex-wrap: wrap;
-    flex-direction: column;
+    margin-bottom: 0.5rem auto;
   }
 
   footer {
     text-align: center;
   }
+
+
 }
