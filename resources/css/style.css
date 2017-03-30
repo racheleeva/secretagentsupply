@@ -50,13 +50,17 @@ h1 {
   font-weight: bold;
 }
 
-nav ul {
+.desktop-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: firebrick;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .product-grid {
@@ -116,4 +120,61 @@ footer {
   height: 5rem;
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .desktop-nav {
+    display:none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: firebrick;
+  }
+
+  .product-grid .product {
+    width: 47%;
+  }
+
+  .location .product {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+  }
+
+  .main-banner .callout {
+    background-color: black;
+    padding: 1rem 2rem;
+    width: 100%;
+    top: 10rem;
+    position: relative;
+  }
+
+  h2 {
+    font-size: .77rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .product-grid .product {
+    width: 90%;
+  }
+
+  .location .product {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    justify-content: center;
+  }
 }
