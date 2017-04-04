@@ -201,6 +201,78 @@ footer {
     width: 90%;
   }
 
+.product-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /*From Elise: moved the pen to the center*/
+}
+
+.products, .location {
+  flex-wrap: wrap;
+  /*From Elise: forced Loc/Hours to stack*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+  .watch.product {
+    display: none;
+  }
+
+  .info {
+    width: 90%;
+    margin-bottom: 0.5rem auto;
+    display: block;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+
+/*From Elise
+@media only screen and (max-width: 470px) {
+
+  .product-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+  .products,
+  .location {
+    flex-wrap: wrap;
+  }
+
+  .main-banner {
+    height: 15rem;
+  }
+
+  .main-banner .callout {
+    background-color: black;
+    padding: 1rem 2rem;
+    width: 100%;
+    top: 10rem;
+    position: relative;
+  }
+
+  h2 {
+    font-size: .77rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+ .product-grid .product {
+    width: 90%;
+  }
+
   .watch.product {
     display: none;
   }
@@ -216,3 +288,5 @@ footer {
 
 
 }
+
+*/
